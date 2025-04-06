@@ -63,3 +63,134 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     grid-template-rows: 60px 60px 60px 45px;
 
 }
+
+
+/* Base styles already apply nicely for large screens */
+/* Landscape handling (especially for phones/tablets) */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .main {
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+  
+    .top {
+      transform: scale(0.85);
+    }
+  }
+  
+  /* Smallest screens (≤280px) */
+  @media screen and (max-width: 280px) {
+    .top {
+      width: 220px;
+    }
+  
+    .bottom {
+      width: 200px;
+    }
+  
+    .bottom2 input {
+      width: 200px;
+      height: 28px;
+      padding-left: 8px;
+    }
+  
+    .bottom3 {
+      grid-template-columns: repeat(3, 50px) 35px;
+      grid-template-rows: repeat(3, 50px) 35px;
+    }
+  
+    .bottom button {
+      height: 25px;
+      width: 25px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Small screens (phones ≤400px) */
+  @media screen and (max-width: 400px) {
+    .top {
+      width: 240px;
+    }
+  
+    .bottom {
+      width: 220px;
+    }
+  
+    .bottom2 input {
+      width: 220px;
+      height: 30px;
+    }
+  
+    .bottom3 {
+      grid-template-columns: repeat(3, 50px) 35px;
+      grid-template-rows: repeat(3, 55px) 35px;
+    }
+  
+    .bottom button {
+      height: 30px;
+      width: 30px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Medium-small (phones ≤600px) */
+  @media screen and (max-width: 600px) {
+    .top {
+      width: 260px;
+    }
+  
+    .bottom {
+      width: 240px;
+    }
+  
+    .bottom2 input {
+      width: 240px;
+      height: 32px;
+    }
+  
+    .bottom3 {
+      grid-template-columns: repeat(3, 60px) 45px;
+      grid-template-rows: repeat(3, 55px) 45px;
+    }
+  
+    .bottom button {
+      height: 35px;
+      width: 35px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Tablets (≤1024px) */
+  @media screen and (max-width: 1024px) {
+    .top {
+      width: 300px;
+    }
+  
+    .bottom {
+      width: 270px;
+    }
+  
+    .bottom2 input {
+      width: 270px;
+      height: 35px;
+    }
+  
+    .bottom3 {
+      grid-template-columns: repeat(3, 70px) 45px;
+      grid-template-rows: repeat(3, 60px) 45px;
+    }
+  
+    .bottom button {
+      height: 40px;
+      width: 40px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Extra large screens (monitors ≥1440px) */
+  @media screen and (min-width: 1440px) {
+    .top {
+      transform: scale(1.1);
+    }
+  }
+  
